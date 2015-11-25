@@ -2,7 +2,7 @@
  * Created by bruno on 23/11/15.
  */
 
-requirejs.config({
+require.config({
             paths: {
                 "jquery": "tests/js/helpers/jquery",
                 "jasmine": "tests/js/helpers/jasmine",
@@ -15,8 +15,8 @@ requirejs.config({
 
 
 
-requirejs(["jquery","jasmine","jasmine-html","boot","flight"],
+require(["jquery","jasmine","jasmine-html","boot","flight"],
     //$,jasmine,jasmine_html,boot,flight
-    function(){
+    function($,jasmine,jasmine_html,boot,flight){
 //alert(getJasmineRequireObj())
         });
